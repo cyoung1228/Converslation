@@ -138,15 +138,11 @@
   <script src="http://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**" type="text/javascript"></script>
     <script type="text/javascript">
       $('#submit').on('click touchstart', function(){
-        var lang1 = $('#lang1').val().toString();
         var firstLang = $('#lang1').find(":selected").text();
-        var lang2 = $('#lang2').val().toString();
         var secondLang = $('#lang2').find(":selected").text();
         var name1 = $('#name1').val().toString();
-        var firstName = $('#name1').find(":selected").text();
         var name2 = $('#name2').val().toString();
-        var secondName = $('#name2').find(":selected").text();
-      $('#translation-wrapper').append('<p>'+firstName: +'</p><p class="translation"></p');
+      $('#translation-wrapper').append('<p>'+name1 +'</p><p class="translation"></p');
       $('.translation:last-child').text($('#value').val());
         Microsoft.Translator.Widget.Translate(lang1, lang2);
       $('#lang1').val(lang2);
