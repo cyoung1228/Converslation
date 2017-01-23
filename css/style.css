@@ -31,11 +31,14 @@ h4{
    background-color:rgba(72,72,72,0.7);
    padding: 10px 20px 30px 20px;
    max-width:100%;
-   float: left;
+   /*float: left;
    left: 50%;
-   position: relative;
+   position: relative;*/
+   /*margin-top:30px;
+   margin-left: -450px;*/
    margin-top:30px;
-   margin-left: -450px;
+   margin-left: 25%;
+   margin-right: 25%;
    border-radius:7px;
    -webkit-border-radius:7px;
    -moz-border-radius:7px;

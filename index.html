@@ -75,7 +75,7 @@
           </label>  
       </div>
       <div>
-        <text>If an alternative keyboard is needed for input please go <a href="http://gate2home.com/" target="_blank">here</a> and copy your input, then paste it here in the message area.</text> 
+        <text>If an alternative keyboard is needed for input please go <button><a href="http://gate2home.com/" target="_blank">here</a></button> and copy your input, then paste it here in the message area.</text> 
       </div>
       <p></p>
       <div>
@@ -132,7 +132,7 @@
       </div>
       <p></p>
       <div>              
-          <a href="https://ufl.qualtrics.com/SE/?SID=SV_eW3gInqOUcSzB8V">COMPLETE INTERACTION</a>
+          <a href="https://ufl.qualtrics.com/SE/?SID=SV_eW3gInqOUcSzB8V"><button type="submit">COMPLETE INTERACTION</button></a>
       </div>
 	</div>
   <script src="https://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**" type="text/javascript"></script>
@@ -144,7 +144,6 @@
         var secondLang = $('#lang2').find(":selected").text();
         var name1 = $('#name1').val().toString();
         var name2 = $('#name2').val().toString();
-        //$('.translation:last-child').text($('#message').val());
         $('#translation-wrapper').append('<p>'+ name1 + ': ' + '</p><p class="translation"></p');
         $('.translation:last-child').text($('#message').val());
         Microsoft.Translator.Widget.Translate(lang1, lang2);
