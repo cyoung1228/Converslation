@@ -6,8 +6,8 @@
   
   
   
-      <link rel="stylesheet" href="css/style.css">
-      <script src="jquery-3.1.1.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="jquery-3.1.1.min.js"></script>
 
   
 </head>
@@ -140,7 +140,7 @@
           <a href="https://ufl.qualtrics.com/SE/?SID=SV_eW3gInqOUcSzB8V"><button type="submit">COMPLETE INTERACTION</button></a>
       </div>
 	</div>
-  <script src="https://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**" type="text/javascript"></script>
+  <script src="https://www.microsoftTranslator.com/ajax/v3/WidgetV3.ashx?siteData=ueOIGRSKkd965FeEGM5JtQ**&ui=false" type="text/javascript"></script>
     <script type="text/javascript">
       $('#submit').on('click touchstart', function(){
         var lang1 = $('#lang1').val().toString();
@@ -152,6 +152,8 @@
         $('#translation-wrapper').append('<p>'+ name1 + ': ' + '</p><p class="translation"></p');
         $('.translation:last-child').text($('#message').val());
         Microsoft.Translator.Widget.Translate(lang1, lang2);
+        Microsoft.Translator.Widget.domTranslator.showHighlight = false;
+        Microsoft.Translator.Widget.domTranslator.showTooltips = false;
         $('#lang1').val(lang2);
         $('#lang2').val(lang1);
         $('#name1').val(name2);
@@ -160,6 +162,13 @@
       return false;
       });
   </script>
+  <style>
+  #WidgetFloaterPanels {
+    left: 0 !Important;
+    display: none !important;
+  }
+  </style>
+
 
 
   
