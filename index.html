@@ -144,15 +144,15 @@
         var secondLang = $('#lang2').find(":selected").text();
         var name1 = $('#name1').val().toString();
         var name2 = $('#name2').val().toString();
-        var message = $('#message').val()).toString();
-        $('#translation-wrapper').append('<p>'+ name1 + ': ' + message + '</p><p class="translation"></p');
         //$('.translation:last-child').text($('#message').val());
+        $('#translation-wrapper').append('<p>'+ name1 + ': ' + '</p><p class="translation"></p');
+        $('.translation:last-child').text($('#message').val());
         Microsoft.Translator.Widget.Translate(lang1, lang2);
         $('#lang1').val(lang2);
         $('#lang2').val(lang1);
         $('#name1').val(name2);
         $('#name2').val(name1);
-        return false;
+      return false;
       });
   </script>
 
