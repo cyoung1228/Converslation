@@ -143,9 +143,9 @@
         var lang2 = $('#lang2').val().toString();
         var secondLang = $('#lang2').find(":selected").text();
         var name1 = $('#name1').val().toString();
-        var firstName = $('#name1').find(":selected").text();
+        //var firstName = $('#name1').find(":selected").text();
         var name2 = $('#name2').val().toString();
-        var secondName = $('#name2').find(":selected").text();
+        //var secondName = $('#name2').find(":selected").text();
       $('#translation-wrapper').append('<p>'+ name1 + ': ' + '</p><p class="translation"></p');
       $('.translation:last-child').text($('#value').val());
         Microsoft.Translator.Widget.Translate(lang1, lang2);
