@@ -148,7 +148,7 @@
         var secondName = $('#name2').find(":selected").text();
       $('#translation-wrapper').append('<p>'firstName: '</p><p class="translation"></p');
       $('.translation:last-child').text($('#value').val());
-        Microsoft.Translator.Widget.Translate(first, language);
+        Microsoft.Translator.Widget.Translate(lang1, lang2);
       $('#lang1').val(lang2);
       $('#lang2').val(lang1);
       return false;
